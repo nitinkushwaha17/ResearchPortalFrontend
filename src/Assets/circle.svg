@@ -1,3 +1,1 @@
-<svg viewBox="0 0 80 80" width="80" height="80">
-  <circle class="circle" cx="40" cy="40" r="38"/>
-</svg>
+<svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="40" r="38" class="circle"/></svg>
