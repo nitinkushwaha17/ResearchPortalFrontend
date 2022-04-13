@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/styles';
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { TEAM_INFO } from '../../Data/team';
 import { colors } from '../theme/Theme';
+import teamImg from '../../Assets/WebD_team.JPG';
 
 const bg = require('../../Assets/teamBg.png').default;
 
@@ -52,6 +53,15 @@ const useStyles = makeStyles(() => ({
     backgroundRepeat: 'no-repeat',
     backgroundPosition: '50% 80%',
   },
+  card2: {
+    margin: '2rem',
+    width: '80vw',
+    height: 'auto',
+  },
+  cover2: {
+    width: '100%',
+    height: '100%',
+  },
 }));
 
 export default function Team() {
@@ -63,7 +73,7 @@ export default function Team() {
           Our Team
         </Typography>
       </Grid>
-      {TEAM_INFO.map((team) => (
+      {/* {TEAM_INFO.map((team) => (
         <Grid item key={team.id}>
           <Card elevation={5} className={classes.card}>
             <CardContent className={classes.content}>
@@ -88,7 +98,12 @@ export default function Team() {
             <img src={team.image} alt={team.name} className={classes.cover} />
           </Card>
         </Grid>
-      ))}
+      ))} */}
+      <Grid item key={1}>
+        <Card elevation={5} className={classes.card2}>
+          <img src={teamImg} alt="Team" className={classes.cover2} />
+        </Card>
+      </Grid>
     </Grid>
   );
 }
