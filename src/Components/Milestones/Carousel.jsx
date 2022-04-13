@@ -11,9 +11,6 @@ const useStyles = makeStyles(() => ({
     margin: '0px',
     cursor: 'pointer',
     position: 'relative',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
     // transform: 'translateY(32vh)',
   },
   slideshowDots: {
@@ -74,7 +71,13 @@ export default function Carousel() {
   }, []);
 
   return (
-    <Grid container justify="center" align="center" spacing={2}>
+    <Grid
+      container
+      justify="center"
+      align="center"
+      spacing={2}
+      style={{ display: 'flex', alignItems: 'center' }}
+    >
       <Grid item className={classes.arrows} xs={2}>
         <Arrow direction="left" clickFunction={() => onArrowClick('left')} />
       </Grid>
