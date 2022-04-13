@@ -107,7 +107,7 @@ export default function Signup() {
             if (status === 400) {
               if (data.email) {
                 setAlert(true);
-                setError(data.email[0]);
+                setError('This email is already registrered');
               } else if (data.username) {
                 setAlert(true);
                 setError(data.username[0]);
