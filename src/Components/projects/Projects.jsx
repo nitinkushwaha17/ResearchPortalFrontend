@@ -118,6 +118,7 @@ export default function Projects() {
   const classes = useStyles();
   const state = useSelector((state) => state.profile);
   const [project, setProject] = useState([]);
+  const [fetchedProjects, setFetchedProjects] = useState(0);
   const [sopFile, setSopFile] = useState([]);
   const [snackMessage, setSnackMessage] = useState('');
   const [applied, setApplied] = useState(false);
@@ -135,6 +136,7 @@ export default function Projects() {
       .then((data) => {
         projs = data;
         setProject(projs);
+        setFetchedProjects(1);
       })
       .catch((error) => {
         console.log(error);
@@ -266,7 +268,13 @@ export default function Projects() {
       ) : (
         <>
           {!projs.length ? (
-            <CircularProgress color="inherit" />
+            <>
+              {fetchedProjects ? (
+                <Typography variant="h4">No projects available</Typography>
+              ) : (
+                <CircularProgress color="inherit" />
+              )}
+            </>
           ) : (
             <Typography variant="h4">No match found</Typography>
           )}

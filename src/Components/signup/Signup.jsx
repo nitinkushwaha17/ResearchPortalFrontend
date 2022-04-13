@@ -107,11 +107,14 @@ export default function Signup() {
             if (status === 400) {
               if (data.email) {
                 setAlert(true);
-                setError(data.email[0]);
+                setError('This email is already registered');
+              } else if (data.username) {
+                setAlert(true);
+                setError(data.username[0]);
               }
             }
             dispatch(feedback(''));
-            if (data.username) {
+            if (status === 201) {
               history.push('/login');
             } else {
               console.log(data);
