@@ -108,10 +108,13 @@ export default function Signup() {
               if (data.email) {
                 setAlert(true);
                 setError(data.email[0]);
+              } else if (data.username) {
+                setAlert(true);
+                setError(data.username[0]);
               }
             }
             dispatch(feedback(''));
-            if (data.username) {
+            if (status === 201) {
               history.push('/login');
             } else {
               console.log(data);
