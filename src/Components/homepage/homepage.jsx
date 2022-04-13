@@ -398,7 +398,7 @@ export default function Homepage() {
           </Grid>
         </Grid>
       </div>
-      <div>
+      {/* <div>
         <div className={classes.root}>
           <Grid container direction="row" alignItems="flex-start">
             <Grid item xs={12} md={4}>
@@ -431,7 +431,7 @@ export default function Homepage() {
             </Grid>
           </Grid>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
