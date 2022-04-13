@@ -11,7 +11,10 @@ const useStyles = makeStyles(() => ({
     margin: '0px',
     cursor: 'pointer',
     position: 'relative',
-    transform: 'translateY(32vh)',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    // transform: 'translateY(32vh)',
   },
   slideshowDots: {
     textAlign: 'center',

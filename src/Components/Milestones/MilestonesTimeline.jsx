@@ -133,7 +133,7 @@ export default function MilestonesTimeline() {
                 <Typography
                   align="center"
                   className={classes.title}
-                  variant="h4"
+                  variant="h6"
                   component="p"
                 >
                   {slide.title}
@@ -186,7 +186,7 @@ export default function MilestonesTimeline() {
               <Typography
                 align="center"
                 className={classes.title}
-                variant="h4"
+                variant="h5"
                 component="p"
               >
                 {slide.title}
