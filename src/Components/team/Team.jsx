@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/styles';
 import { FaGithub, FaFacebook, FaLinkedin } from 'react-icons/fa';
 import { TEAM_INFO } from '../../Data/team';
 import { colors } from '../theme/Theme';
-import teamImg from '../../Assets/WebD_team.JPG';
+import teamImg from '../../Assets/IEEE_team.JPG';
 
 const bg = require('../../Assets/teamBg.png').default;
 
