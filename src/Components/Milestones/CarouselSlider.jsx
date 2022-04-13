@@ -7,7 +7,7 @@ const useStyles = makeStyles(() => ({
   card: {
     borderRadius: 5,
     margin: '15px auto',
-    height: '65vh',
+    height: 'auto',
     width: '65vw',
     boxShadow: '20px 20px 20px black',
     display: 'flex',
@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
   },
   media: {
     zIndex: '100',
-    height: '65vh',
+    height: 'auto',
     width: '65vw',
   },
 }));
