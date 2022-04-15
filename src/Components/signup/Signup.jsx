@@ -115,6 +115,7 @@ export default function Signup() {
             }
             dispatch(feedback(''));
             if (status === 201) {
+              dispatch(feedback('snackbar2'));
               history.push('/login');
             } else {
               console.log(data);

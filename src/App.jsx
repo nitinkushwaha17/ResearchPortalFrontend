@@ -59,6 +59,27 @@ function App() {
           You have successfully logged in!!
         </Alert>
       </Snackbar>
+      <Snackbar
+        open={state.feedback === 'snackbar2'}
+        autoHideDuration={2000}
+        anchorOrigin={{
+          vertical: 'bottom',
+          horizontal: 'right',
+        }}
+        onClose={() => {
+          dispatch(feedback(''));
+        }}
+      >
+        <Alert
+          onClose={() => {
+            dispatch(feedback(''));
+          }}
+          severity="success"
+        >
+          You have successfully registered! <br /> <b>Check your mail</b> for
+          verification link.
+        </Alert>
+      </Snackbar>
       <ThemeProvider theme={theme}>
         <Router>
           <ScrollToTop />
